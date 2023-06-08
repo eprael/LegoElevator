@@ -1,0 +1,138 @@
+Detecting which key was pressed:
+To know which key was pressed, we have to check the event.key variable corresponds to which pygame keys. For example, the pygame key for the letter “A” is “K_a” then we will compare event.Key with K a and if it comes to be same that means the key “A” was pressed.
+
+ 
+
+The various keyboard key and corresponding pygame keys are:
+
+pygamekey	Description
+K_BACKSPACE	backspace
+K_TAB	tab
+K_CLEAR	clear
+K_RETURN	return
+K_PAUSE	pause
+K_ESCAPE	escape
+K_SPACE	space
+K_EXCLAIM	exclaim
+K_HASH	hash
+K_QUOTEDBL	quotedbl
+K_DOLLAR	dollar
+K_AMPERSAND	ampersand
+K_QUOTE	quote
+K_LEFTPAREN	left parenthesis
+K_RIGHTPAREN	right parenthesis
+K_ASTERISK	asterisk
+K_PLUS	plus sign
+K_COMMA	comma
+K_MINUS	 minus sign
+K_PERIOD 	period
+K_SLASH	forward slash
+K_0 	0
+K_1	1
+K_2	2
+K_3	3
+K_4	4
+K_5	5
+K_6	6
+K_7	7
+K_8	8
+K_9	9
+K_COLON	colon
+K_SEMICOLON	semicolon
+K_LESS	less-than sign
+K_EQUALS	equals sign
+K_GREATER	greater-than sign
+K_QUESTION 	question mark
+K_AT	at
+K_LEFTBRACKET	left bracket
+K_BACKSLASH 	backslash
+K_RIGHTBRACKET  	right bracket
+K_CARET	caret
+K_UNDERSCORE	underscore
+K_BACKQUOTE	grave
+K_a,b,c…….z	A to Z Alphabet
+K_DELETE	delete
+K_KP0, K_KP1, K_KP2….K_KP9	keypad 0 to 9
+K_KP_PERIOD	keypad period
+K_KP_DIVIDE	keypad divide
+K_KP_MULTIPLY	keypad multiply
+K_KP_MINUS	keypad minus
+K_KP_PLUS  	keypad plus
+K_KP_ENTER	keypad enter
+K_KP_EQUALS	keypad equals
+K_UP	up arrow
+K_DOWN	down arrow
+K_RIGHT 	right arrow
+K_LEFT  	Left arrow
+K_INSERT	Insert
+K_HOME	Home
+K_END	End
+K_PAGEUP 	Page Up
+K_PAGEDOWN  	Page Down
+K_F1, K_F2, K_F3……K_F15	F1 to F15
+K_NUMLOCK	Numlock
+K_CAPSLOCK	Capsloack
+K_SCROLLOCK	Scrollock
+K_RSHIFT	Right shift
+K_LSHIFT	Left shift
+K_RCTRL	right control
+K_LCTRL	Left control
+K_RALT 	Right alt
+K_LALT 	Left alt
+K_RMETA	right meta
+K_LMETA 	left meta
+K_LSUPER	left Windows key
+K_RSUPER 	right Windows key
+K_MODE	mode shift
+K_HELP	Help
+K_PRINT	Print Screen
+K_SYSREQ	sysrq
+K_BREAK	Break
+K_MENU	Menu
+K_POWER	Power
+K_EURO	Euro
+ 
+
+
+For example, let’s create a code to check if key “A” or “J” or “P” or “M” was pressed or not. The code for checking will be: 
+
+# importing pygame module
+import pygame
+ 
+# importing sys module
+import sys
+ 
+# initialising pygame
+pygame.init()
+
+# creating display
+display = pygame.display.set_mode((300, 300))
+ 
+# creating a running loop
+while True:
+       
+    # creating a loop to check events that
+    # are occurring
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+         
+        # checking if keydown event happened or not
+        if event.type == pygame.KEYDOWN:
+               
+            # checking if key "A" was pressed
+            if event.key == pygame.K_a:
+                print("Key A has been pressed")
+               
+            # checking if key "J" was pressed
+            if event.key == pygame.K_j:
+                print("Key J has been pressed")
+               
+            # checking if key "P" was pressed
+            if event.key == pygame.K_p:
+                print("Key P has been pressed")
+             
+            # checking if key "M" was pressed
+            if event.key == pygame.K_m:
+                print("Key M has been pressed")
