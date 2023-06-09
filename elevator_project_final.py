@@ -11,7 +11,7 @@
 #      https://youtu.be/kJOom7PcedM
 #
 #  - This code on Github
-#      https://github.com/eprael/Comp9/blob/main/Term2_Project_Trafficlight.py
+#      https://github.com/eprael/LegoElevator/blob/main/elevator_project_final.py
 #
 #  - GPIO reference and tutorials
 #       https://gpiozero.readthedocs.io/en/stable/recipes.html
