@@ -8,7 +8,7 @@
 #  Links:
 #
 #  - A video of the running code and hardware
-#      https://youtu.be/Ts2Le7cSoDA
+#      https://youtu.be/kJOom7PcedM
 #
 #  - This code on Github
 #      https://github.com/eprael/Comp9/blob/main/Term2_Project_Trafficlight.py
