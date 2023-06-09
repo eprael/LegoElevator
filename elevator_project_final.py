@@ -17,6 +17,11 @@
 #       https://gpiozero.readthedocs.io/en/stable/recipes.html
 #       https://projects.raspberrypi.org/en/projects/physical-computing/0
 #
+#  - Additional Modules and Tutorials
+#       https://pypi.org/project/pad4pi/  (keypad)
+#       https://www.theraspberrypiguy.com/raspberry-pi-mini-lcd-display-tutorial/  (LCD)
+#       https://www.pygame.org/wiki/GettingStarted (pygame)
+#       https://pypi.org/project/pynput/ (keyboard monitoring)
 #
 #  - Google Code Blocks for coloring source code in Google Docs
 #       https://workspace.google.com/marketplace/app/code_blocks/100740430168
