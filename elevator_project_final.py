@@ -30,7 +30,6 @@
 # —-----------------------------------------------------
 
 # IMPORT LIBRARIES
-# =======================================================
 
 # modules for system access, file access, time delay, etc
 import os, sys, time
@@ -55,7 +54,6 @@ from pathlib import Path
 
 
 # VARIABLES & PINS
-# =======================================================
 
 # full path to sounds folder
 APP_FOLDER = os.path.dirname(os.path.realpath(sys.argv[0]))
@@ -98,8 +96,7 @@ elevator_initialized = False
 building_name = "Evan Tower"
 
 
-# functions
-# ================================================================
+# FUNCTIONS
 
 def play_sound(soundFile, waitTillDone):
 
@@ -295,18 +292,14 @@ def clear_screen():
 try:
     
     # INITIALIZE DEVICES
-    # --------------------------------------------------
 
     # screen
-    # --------------------------------------------------
     os.system("")
 
     # sound
-    # --------------------------------------------------
     mixer.init()
 
     # lcd display
-    # --------------------------------------------------
     try:
         display = lcd_module.Lcd()
         show_display (building_name, 1)
@@ -314,12 +307,10 @@ try:
         print("error using display!")
 
     # keypad 
-    # --------------------------------------------------
     keypad = rpi_gpio.KeypadFactory().create_keypad(keypad=KEYPAD,row_pins=ROW_PINS, col_pins=COL_PINS) 
     keypad.registerKeyPressHandler(keypad_pressed)
 
     # motor
-    # --------------------------------------------------
     GPIO.setwarnings(False) # Ignore warning for now
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(motor_in1,GPIO.OUT)
@@ -335,7 +326,6 @@ try:
     p.ChangeDutyCycle(85)
     
     # outside buttons
-    # --------------------------------------------------
     # setup pins and tell it what function to call when pressed
 
     GPIO.setup(button_floor1, GPIO.IN, pull_up_down=GPIO.PUD_UP) 
